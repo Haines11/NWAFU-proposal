@@ -1,0 +1,90 @@
+\documentclass{nwafu-proposal}
+
+\newcommand{\graduationyear}{2027}
+\newcommand{\studentid}{}
+\newcommand{\reporttitle}{请填写毕业论文（设计）题目}
+\newcommand{\college}{}
+\newcommand{\major}{}
+\newcommand{\studentclass}{}
+\newcommand{\studentname}{}
+\newcommand{\supervisor}{}
+\newcommand{\cosupervisor}{无}
+\newcommand{\proposaldate}{2026年10月24日}
+
+\begin{document}
+\makeproposalcover
+\makereporttitle
+
+\section{选题依据}
+\subsection{国内外研究现状}
+请梳理本领域国内外研究进展，说明已有成果、主要问题和发展趋势。
+引用采用著者—出版年制，例如\citet{huang2004}，或括号引用\citep{hull2002}。
+
+\subsection{选题目的与意义}
+请说明选题的理论意义、应用价值以及拟解决的问题。
+
+\section{研究目标}
+请明确研究目标，并给出可验证的评价指标。
+
+\section{研究（设计）内容}
+请分条阐述研究内容、重点问题和各项任务之间的关系。
+
+\section{研究方案}
+\subsection{研究方法}
+请说明研究对象、数据来源、实验设计、分析方法和实施条件。
+必要时可使用脚注补充说明。\footnote{此处为脚注示例，正式使用时请替换或删除。}
+
+\subsection{技术路线}
+\begin{figure}[htbp]
+\centering
+\fbox{\parbox[c][2.5cm][c]{.85\linewidth}{\centering 文献调研与问题分析 $\longrightarrow$ 方案设计\par 数据获取与分析 $\longrightarrow$ 结果验证与总结}}
+\caption{研究技术路线示意图}
+\label{fig:workflow}
+\end{figure}
+请结合图\ref{fig:workflow}说明研究步骤。
+公式排版示例为
+\begin{equation}
+\bar{x}=\frac{1}{n}\sum_{i=1}^{n}x_i .
+\end{equation}
+
+\section{预期结果}
+请说明预期形成的研究结论、设计成果、模型或其他可交付成果。
+
+\section{存在困难}
+请分析研究条件、实验材料、数据获取和技术实施方面的困难及解决办法。
+
+\section{风险评估}
+\input{risk-assessment}
+
+\section{进度安排}
+\begin{table}[htbp]
+\caption{研究进度安排}
+\label{tab:schedule}
+\centering
+\fontsize{10.5pt}{18pt}\selectfont
+\begin{tabularx}{\linewidth}{@{}p{3cm}XX@{}}
+\toprule
+时间 & 主要工作 & 阶段成果 \\
+\midrule
+起止日期 & 文献调研、明确研究问题 & 文献综述与开题报告 \\
+起止日期 & 开展实验或设计、收集数据 & 实验记录与初步结果 \\
+起止日期 & 数据分析、结果验证 & 分析结果与论文初稿 \\
+起止日期 & 修改论文、准备答辩 & 论文定稿与答辩材料 \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\section{指导教师意见（签名）}
+\vspace*{2cm}
+\begin{flushright}
+指导教师签名：\blankfield{3cm}{}\par
+日期：\blankfield{3cm}{}
+\end{flushright}
+
+\begin{thebibliography}{99}
+\bibitem[黄骥等(2004)]{huang2004}
+黄骥, 王建飞, 张红生. 2004. 植物戊糖磷酸途径及其两个关键酶的研究进展[J]. 植物学报, 21(2): 139-145.
+\bibitem[Hull(2002)]{hull2002}
+Hull R. 2002. Matthews' Plant Virology[M]. London: Academic Press.
+\end{thebibliography}
+\end{document}

@@ -1,0 +1,23 @@
+# GitHub does not create labels from YAML automatically; apply these definitions
+# with github-label-sync or the gh CLI after creating the repository.
+- name: bug
+  color: d73a4a
+  description: Something is not working as expected
+- name: documentation
+  color: 0075ca
+  description: Improvements or corrections to documentation
+- name: enhancement
+  color: a2eeef
+  description: New feature or improvement
+- name: formatting
+  color: cfd3d7
+  description: Typesetting or visual-formatting change
+- name: help wanted
+  color: 008672
+  description: Extra attention or contribution is welcome
+- name: good first issue
+  color: 7057ff
+  description: Suitable for a first contribution
+- name: question
+  color: d876e3
+  description: Further information is requested
